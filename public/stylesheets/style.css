@@ -1,0 +1,140 @@
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #fff;
+  padding: 30px;
+  font-weight: 600;
+}
+
+#safeTripTitle {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container {
+  width: 960px;
+  background: rgba(11, 13, 24, 0.6);
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.searchForm, .reportForm {
+  padding: 20px 20px 50px 50px;
+}
+
+#search-report {
+  width: 1200px;
+}
+
+input, select {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  z-index: 9;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  display: block; 
+}
+
+.submit {
+  background: #f8ba0f;
+  color: #fff;
+  cursor: pointer; 
+  text-align: center;
+}
+  
+.submit:hover {
+  background-color: #ce9906; 
+}
+
+::placeholder {
+  color: #808080;
+}
+
+#report-geo {
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer; 
+  font-weight: 600;
+}
+
+.form-group {
+  align-items: center;
+}
+
+.search-from, .search-to {
+  display: inline-block;
+  width: 350px;
+  margin: 5px;
+}
+
+.search-submit {
+  display: inline-block;
+  width: 100px;
+  margin: 5px;
+}
+
+.report-date {
+  display: inline-block;
+  width: 200px;
+  margin: 5px;
+}
+
+#report-date {
+  color: #808080;
+}
+
+.report-event {
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+}
+
+select {
+  display: inline-block;
+  color: #808080;
+  width: 135px;
+  padding: 16px;
+}
+
+.report-address {
+  display: inline-block;
+  width: 350px;
+  margin: 5px;
+}
+
+.report-geo {
+  display: inline-block;
+  margin: 5px;
+}
+
+.report-lat, .report-lon {
+  display: inline-block;
+  width: 350px;
+  margin: 5px;
+}
+
+.report-submit {
+  display: inline-block;
+  width: 100px;
+  margin: 5px;
+}
+
+
+#map {
+  margin: 60px auto;
+  height: 400px;
+  width: 100%;
+}

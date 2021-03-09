@@ -14,13 +14,19 @@
   </head>
 
   <body>
-    <div id="safeTripTitle">
-      <h1>Safe Trip</h1>
+
+   <div class="nav-bar">
+      <ul>
+        <li id="title" class="nav-item"><a href="">Safe Trip</a></li>
+        <li id="login" class="nav-item"><a href="login.html">Log in</a></li>
+        <li id="logout" class="nav-item"><a href="index.html">Log out</a></li>
+      </ul>
     </div>
 
-    <div class="container" id="search-report">
+
+    <div id="searchAndReport">
       <!--search form-->
-      <div class="container">
+      <div class="container" class="searchForm">
         <form action="/search" id="searchForm" class="searchForm" method="POST">
           <div class="form-group">
 
@@ -44,7 +50,7 @@
       <!--end of search form-->
 
       <!--search form-->
-      <div class="container">
+      <div class="container" class="reportForm">
         <form action="/report" id="reportForm" class="reportForm" method="POST">
           <div class="form-group">
             
@@ -94,6 +100,7 @@
       </div>
       <!--end of report form-->
     </div>
+    
 
     <!--map-->
     <div class="map">
@@ -104,7 +111,7 @@
     
     <script src="./javascripts/frontend.js"></script>
     <script 
-      src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhuxbSwmRW450yLyRis3ZK_MjkRdS02yk&callback=initMap"
       async
     ></script>
     <script

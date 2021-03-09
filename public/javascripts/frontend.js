@@ -51,3 +51,47 @@ function renderReports(file) {
 loadReports();
 
 
+function logoutFunc() {
+  const logoutButton = document.getElementById("logout");
+  logoutButton.addEventListener("click", async () => {
+    await fetch("/logout");
+  });
+}
+
+logoutFunc();
+
+async function showLoginButton() {
+  const loginButton = document.getElementById("login");
+  const logoutButton = document.getElementById("logout");
+  const resRaw = await fetch("/check_current_login");
+  const res = await resRaw.json();
+
+  if(res.result) {
+    loginButton.style.display = "none";
+    logoutButton.style.display = "block";
+  }else {
+    loginButton.style.display = "block";
+    logoutButton.style.display = "none";
+  }
+}
+
+showLoginButton();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
